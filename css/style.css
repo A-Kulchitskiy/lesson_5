@@ -1,0 +1,66 @@
+/*font-family: 'Cherry Swash', cursive;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* HEADER=================
+============== */
+
+.head {
+    width: 100%;
+    background: #55ADB7;
+    opacity: 0.8;
+}
+
+.header-logo {
+    font-family: 'Cherry Swash', cursive;
+    font-size: 40px;
+}
+
+.links a {
+    font-size: 18px;
+    color: #DCE3E4;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.line {
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* MAIN=======================
+=============== */
+
+.block-photo {
+    width: 100%;
+    background: url(../img/sea.png);
+    background-size: 100%;
+    color: #E4E4E4;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 44px;
+    text-transform: uppercase;
+}
