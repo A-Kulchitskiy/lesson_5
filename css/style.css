@@ -13,7 +13,11 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -25,6 +29,13 @@ body {
     width: 100%;
     background: #55ADB7;
     opacity: 0.8;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header-logo a {
@@ -42,14 +53,13 @@ body {
     text-decoration: none;
 }
 
-.line {
-    padding: 0 15px;
+.links a::after {
+    content: '/';
+    padding: 0 15px 0 15px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.links a:nth-child(4)::after {
+    content: '';
 }
 
 
@@ -61,31 +71,22 @@ nav {
 ========== */
 
 .block-photo {
-    display: flex;
-    justify-content: center;
     width: 100%;
     background: url(../img/sea.png);
     color: #E4E4E4;
 }
 
-.photo-content {
-    max-width: 517px;
-}
-
 .main-title {
+    width: 517px;
     padding: 129px 0 46px 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 44px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.btn {
+.btn-header {
     width: 234px;
     height: 47px;
-    display: flex;
-    justify-content: center;
     background: none;
     margin: 0 auto;
     border-radius: 5px;
@@ -98,10 +99,10 @@ nav {
 }
 
 .block-dots {
-    display: flex;
-    justify-content: center;
     margin-top: 121px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .dot {
@@ -114,4 +115,157 @@ nav {
 
 .dot:hover {
     background: #69728C;
+}
+
+
+/* block-info=================
+======= */
+
+.info {
+    width: 100%;
+    color: #4C505D;
+}
+
+.info-text {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    padding: 76px 0 39px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 80px 0;
+}
+
+.icon img {
+    padding: 0 100px 0 100px;
+}
+
+
+/* block-comment============
+    =========== */
+
+.comment {
+    width: 100%;
+    background: #00D089;
+}
+
+.photo-face {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    background: url(../img/icon/face.png);
+    border-radius: 50%;
+    margin: 6em 0 4em 0;
+}
+
+.comment-name {
+    position: absolute;
+    left: 150px;
+}
+
+.quotes {
+    font-size: 150px;
+    opacity: 0.2;
+}
+
+.name {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.comment-text {
+    margin-bottom: 6em;
+    font-size: 18px;
+}
+
+
+/* block-map============
+    ========= */
+
+.map {
+    width: 100%;
+    background: url(../img/map.png);
+}
+
+.map-circle {
+    display: flex;
+    justify-content: center;
+}
+
+.map-form {
+    width: 431px;
+    height: 431px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #69728C;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.map-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 112px 0 45px 0;
+}
+
+.map-form form input,
+textarea {
+    width: 276px;
+    margin: 0 0 14px 0;
+    padding: 12px 0 10px 15px;
+    resize: none;
+}
+
+.map-form form textarea {
+    height: 80px;
+}
+
+.btn-map {
+    width: 65px;
+    height: 65px;
+    align-self: center;
+    background: #00D089;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.send {
+    width: 15px;
+    height: 25px;
+    margin: 0px 20px 3px;
+    border: solid #FFFFFF;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg)
+}
+
+
+/* FOOTER===========
+============ */
+
+footer {
+    width: 100%;
+    background: #00D089;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
 }
